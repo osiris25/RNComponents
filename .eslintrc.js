@@ -3,6 +3,10 @@ module.exports = {
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  ///se usa para desactivar que marque error en el codigo por espacios
+  rules:{
+    'prettier/prettier':0,
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
