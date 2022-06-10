@@ -18,10 +18,10 @@ export const FlatListMenuItem = ({ menuItem }: Props) => {
         onPress={()=>navigation.navigate(menuItem.component)}
         >
             <View style={styles.container}>
-                <Icon name={menuItem.icon} color='black' size={23} />
+                <Icon name={menuItem.icon} color='purple' size={23} />
                 <Text>{menuItem.name}</Text>
                 <View style={{ flex: 1 }} />
-                <Icon name='chevron-forward-outline' color='black' size={23} />
+                <Icon name='chevron-forward-outline' color='purple' size={23} />
             </View>
         </TouchableOpacity>
     )
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     },
     itemText: {
         marginLeft: 10,
-        fontSize: 18
+        fontSize: 20, 
+        fontWeight:'bold'
     }
 });
